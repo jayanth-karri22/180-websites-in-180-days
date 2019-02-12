@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: whitesmoke;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.days {
+  width: 100px;
+  height: 100px;
+  background: #f1c40f;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.days span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f39c12;
+  font-size: 22px;
+}
+
+.message-style {
+  background: #16a085;
+  font-size: 40px;
+  text-shadow: -3px 3px 0 rgba(0, 0, 0, 0.3);
+  color: #f6f8f8;
+  text-align: center;
+}
+
+.message-style span {
+  color: #f6f8f8;
+  font-size: 40px;
+}
+
+.message {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  padding: 100px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}
