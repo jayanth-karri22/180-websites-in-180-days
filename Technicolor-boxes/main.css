@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  background: black;
+  box-sizing: border-box, content-box;
+}
+
+.container {
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 918px;
+  margin: 0 auto;
+}
+
+.box {
+  height: 11.099%;
+  width: 11.099%;
+  display: block;
+}
+
+.box:hover {
+  box-shadow: 5px 3px 2px #777;
+}
