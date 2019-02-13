@@ -169,3 +169,92 @@ h3 {
   height: 50px;
   border-right: 6px solid black;
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 208px;
+    height: 122.2px;
+    border: 0.5px solid black;
+  }
+  h3 {
+    font-size: 8.8px;
+  }
+  .colors {
+    padding: 4.42px;
+  }
+  .square {
+    height: 10px;
+    width: 10px;
+    border: 0.15px solid black;
+    margin-bottom: 3.37px;
+    margin-left: 3.37px;
+  }
+  .checkerbox {
+    width: 162.55px;
+    height: 111.11px;
+    border: 0.3px solid black;
+    margin-left: 6.66px;
+  }
+  .row1 {
+    height: 22.22px;
+    width: 159.55px;
+    border: 1.3px solid black;
+  }
+  .row2 {
+    height: 33.33px;
+    width: 159.55px;
+    border: 1.3px solid black;
+  }
+  .row3 {
+    height: 11.11px;
+    width: 159.55px;
+    border: 1.3px solid black;
+  }
+  .row4 {
+    height: 22.22px;
+    width: 159.55px;
+    border: 1.3px solid black;
+  }
+
+  .block1 {
+    width: 38.88px;
+  }
+
+  .block2 {
+    width: 55.55px;
+  }
+
+  .block3 {
+    width: 22.22px;
+  }
+
+  .block4 {
+    width: 38.885px;
+    height: 22.22px;
+  }
+
+  .block5 {
+    height: 33.33px;
+    width: 38.885px;
+  }
+
+  .block6 {
+    width: 38.88px;
+    height: 11.11px;
+  }
+
+  .edge-columns {
+    border-right: 1.3px solid black;
+    height: 22.22px;
+  }
+
+  .mid-column-l {
+    border-right: 1.3px solid black;
+    height: 33.33px;
+  }
+
+  .mid-column-s {
+    height: 11.11px;
+    border-right: 1.3px solid black;
+  }
+}
