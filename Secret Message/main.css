@@ -50,11 +50,12 @@ h3 {
 }
 
 .footer {
-  float: right;
-  padding-top: 3400px;
+  position: absolute;
+  left: 90%;
+  top: 3600px;
 }
 
-.Author {
+.author {
   padding-left: 1000px;
   color: grey;
   margin-top: -100px;
