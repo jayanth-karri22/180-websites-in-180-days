@@ -22,3 +22,30 @@ input {
 input:disabled {
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+  p {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .doors {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  input {
+    max-width: 33.33%;
+    height: 240px;
+    margin: 0;
+  }
+}
