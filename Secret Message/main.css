@@ -61,3 +61,43 @@ h3 {
   margin-top: -100px;
   font-size: 20px;
 }
+
+@media (max-width: 480px) {
+  a {
+    font-size: 0.6em;
+    letter-spacing: 1px;
+  }
+
+  p {
+    padding-left: 20px;
+    padding-top: 75px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+
+  h3 {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+
+  .top {
+    top: 100px;
+  }
+
+  .bottom {
+    top: 1250px;
+    height: 1000px;
+    width: 100%;
+  }
+
+  .footer {
+    left: 70%;
+    top: 1620px;
+  }
+
+  .author {
+    padding-left: 200px;
+    margin-top: -50px;
+    font-size: 10px;
+  }
+}
