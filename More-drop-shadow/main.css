@@ -107,4 +107,8 @@ h1 {
   img {
     width: 75%;
   }
+
+  *:focus {
+    outline: none;
+  }
 }
