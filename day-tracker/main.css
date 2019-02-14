@@ -44,3 +44,30 @@ body {
   padding: 100px;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 480px) {
+  .days {
+    width: 14.28;
+    height: 50px;
+  }
+
+  .days span {
+    font-size: 11px;
+  }
+
+  .message-style {
+    font-size: 20px;
+    text-shadow: -1.5px 1.5px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .message-style span {
+    font-size: 20px;
+  }
+
+  .message {
+    width: 100%;
+    top: 20%;
+    padding: 60px;
+    box-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.3);
+  }
+}

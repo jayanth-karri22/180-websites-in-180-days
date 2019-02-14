@@ -12,3 +12,8 @@ container.addEventListener(
   "mouseover",
   e => (e.target.style.background = randomRGB())
 );
+
+container.addEventListener(
+  "touchmove",
+  e => (e.target.style.background = randomRGB())
+);

@@ -30,6 +30,18 @@ body {
 }
 
 .box:hover {
-  -webkit-box-shadow: 5px 3px 2px #777;
-  box-shadow: 5px 3px 2px #777;
+  -webkit-box-shadow: 2.5px 1.5px 1px #777;
+  box-shadow: 2.5px 1.5px 1px #777;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 430px;
+    height: 100%;
+  }
+  .box {
+    height: 11.099%;
+    width: 11.099%;
+    display: block;
+  }
 }
