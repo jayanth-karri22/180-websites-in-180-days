@@ -42,7 +42,7 @@ let newLevel = () => [
 let ballClicked = () => {
   if (messageNum <= 12) {
     newLevel();
-    return (bounceTime = bounceTime - 0.1) && messageNum++;
+    return (bounceTime = bounceTime - 0.99) && messageNum++;
   } else {
     ball.style.display = "none";
     displayMessage.style.display = "flex";
