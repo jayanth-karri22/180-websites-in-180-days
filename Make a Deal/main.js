@@ -2,6 +2,7 @@ let bluedoor = document.getElementById("blue-door");
 let orangedoor = document.getElementById("orange-door");
 let greendoor = document.getElementById("green-door");
 let header = document.getElementsByTagName("h1");
+let doors = document.getElementsByClassName("doors")[0];
 let isDoorOpen = false;
 
 let openedDoor = (firstDoor, secondDoor) =>
@@ -25,7 +26,7 @@ bluedoor.addEventListener("click", () =>
     : [
         (document.getElementsByClassName(
           "container"
-        )[0].innerHTML = `<h1>You Lose</h1>`)
+        )[0].innerHTML = `<h1>You Lose</h1>`) && (doors.style.display = "none")
       ]
 );
 orangedoor.addEventListener("click", () =>
@@ -40,7 +41,7 @@ orangedoor.addEventListener("click", () =>
     : [
         (document.getElementsByClassName(
           "container"
-        )[0].innerHTML = `<h1>You Lose</h1>`)
+        )[0].innerHTML = `<h1>You Lose</h1>`) && (doors.style.display = "none")
       ]
 );
 greendoor.addEventListener("click", () =>
