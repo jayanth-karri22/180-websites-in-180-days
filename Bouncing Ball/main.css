@@ -135,3 +135,12 @@ p {
     transform: translate3d(0, 500px, 0);
   }
 }
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
