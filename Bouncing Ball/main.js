@@ -40,7 +40,7 @@ let newLevel = () => [
 ];
 
 let ballClicked = () => {
-  if (messageNum < 12) {
+  if (messageNum <= 12) {
     newLevel();
     return (bounceTime = bounceTime - 0.1) && messageNum++;
   } else {
