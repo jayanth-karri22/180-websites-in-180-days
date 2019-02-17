@@ -13,7 +13,7 @@ let messages = [
   "Nice job!",
   "Excellent clickin'!",
   "That was Awesome!",
-  "Man are you good!",
+  "Man you are good!",
   "Boom!",
   "You're a pro!",
   "Unbelievable!",
