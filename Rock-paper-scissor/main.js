@@ -16,6 +16,12 @@ let isWinner = (weapon1, weapon2) => {
     : weapon1 == weapon2
     ? (text.textContent = "It's a draw")
     : (text.textContent = "You Lose");
+
+  setTimeout(() => {
+    image[0].setAttribute("src", "assets/left_fist.png");
+    image[1].setAttribute("src", "assets/right_fist.png");
+    text.textContent = "Choose your weapon";
+  }, 1000);
 };
 
 let botResponse = weapon => {
