@@ -1,0 +1,144 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  background: linear-gradient(black, grey, white);
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+  color: grey;
+}
+
+.header h3::after {
+  content: "";
+  display: block;
+  width: 350px;
+  border: 1px solid rgb(128, 128, 128, 0.5);
+  margin-top: 10px;
+}
+
+p {
+  font-size: 30px;
+  color: rgb(163, 154, 154);
+  position: absolute;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.weapons {
+  position: absolute;
+  top: 80%;
+  left: 42%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  width: 100px;
+  background: rgb(58, 56, 56);
+}
+
+button:hover {
+  cursor: pointer;
+  outline: none;
+  background: rgb(128, 128, 128, 0.1);
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+  letter-spacing: 1px;
+}
+
+img {
+  margin: 20px;
+  width: auto;
+  height: auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+.moveUpDown {
+  animation: MoveUpDown 0.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+@media (max-width: 480px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .container {
+    width: 310px;
+  }
+  .header {
+    margin-bottom: 30px;
+  }
+  .header h3::after {
+    content: "";
+    display: block;
+    width: 100px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .content {
+    margin-bottom: 30px;
+  }
+  button {
+    width: 75px;
+    font-size: 12px;
+  }
+  img {
+    max-width: 100px;
+    max-height: 75px;
+    width: auto;
+    height: auto;
+  }
+  .weapons {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+  }
+  .moveUpDown {
+    animation: MoveUpDown 0.5s linear infinite;
+  }
+  
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+}
