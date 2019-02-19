@@ -38,7 +38,7 @@ let weaponSelected = weapon => {
         text.textContent = `${num}`;
         num--;
       }
-    }, 500);
+    }, 400);
     text.textContent = "Choose your weapon";
     image[1].setAttribute("src", "assets/right_fist.png");
     image[1].classList.add("moveUpDown");
