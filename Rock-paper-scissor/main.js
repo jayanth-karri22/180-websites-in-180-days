@@ -18,19 +18,19 @@ let isWinner = (weapon1, weapon2) => {
     : (text.textContent = "You Lose");
 
   setTimeout(() => {
-    image[0].setAttribute("src", "assets/left_fist.png");
-    image[1].setAttribute("src", "assets/right_fist.png");
+    image[0].setAttribute("src", "assets/left_fist.jpg");
+    image[1].setAttribute("src", "assets/right_fist.jpg");
     text.textContent = "Choose your weapon";
   }, 1000);
 };
 
 let botResponse = weapon => {
-  image[0].setAttribute("src", "assets/left_fist.png");
+  image[0].setAttribute("src", "assets/left_fist.jpg");
   image[0].classList.add("moveUpDown");
   let weapons = ["rock", "paper", "scissors"];
   let randomNum = Math.floor(Math.random() * Math.floor(3));
   setTimeout(() => {
-    image[0].setAttribute("src", `assets/${weapons[randomNum]}.png`);
+    image[0].setAttribute("src", `assets/${weapons[randomNum]}.jpg`);
     image[0].classList.remove("moveUpDown");
     isWinner(weapons[randomNum], weapon);
   }, 2000);
@@ -46,11 +46,11 @@ let weaponSelected = weapon => {
       }
     }, 400);
     text.textContent = "Choose your weapon";
-    image[1].setAttribute("src", "assets/right_fist.png");
+    image[1].setAttribute("src", "assets/right_fist.jpg");
     image[1].classList.add("moveUpDown");
     botResponse(weapon);
     setTimeout(() => {
-      image[1].setAttribute("src", `assets/${weapon}.png`);
+      image[1].setAttribute("src", `assets/${weapon}.jpg`);
       image[1].classList.remove("moveUpDown");
     }, 2000);
   };
