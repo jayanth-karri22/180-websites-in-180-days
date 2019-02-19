@@ -21,7 +21,7 @@ let isWinner = (weapon1, weapon2) => {
     image[0].setAttribute("src", "assets/left_fist.png");
     image[1].setAttribute("src", "assets/right_fist.png");
     text.textContent = "Choose your weapon";
-  });
+  }, 1000);
 };
 
 let botResponse = weapon => {
