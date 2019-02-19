@@ -21,7 +21,7 @@ let isWinner = (weapon1, weapon2) => {
     image[0].setAttribute("src", "assets/left_fist.png");
     image[1].setAttribute("src", "assets/right_fist.png");
     text.textContent = "Choose your weapon";
-  }, 1000);
+  }, 1500);
 };
 
 let botResponse = weapon => {
@@ -49,7 +49,13 @@ let weaponSelected = weapon => {
     image[1].setAttribute("src", "assets/right_fist.png");
     image[1].classList.add("moveUpDown");
     botResponse(weapon);
+    rock.disabled = true;
+    paper.disabled = true;
+    scissor.disabled = true;
     setTimeout(() => {
+      rock.disabled = false;
+      paper.disabled = false;
+      scissor.disabled = false;
       image[1].setAttribute("src", `assets/${weapon}.png`);
       image[1].classList.remove("moveUpDown");
     }, 2000);
