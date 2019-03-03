@@ -95,7 +95,7 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 0px;
     flex-direction: column;
   }
   label[for="time"],
@@ -104,5 +104,9 @@ input[type="submit"] {
   }
   .content {
     font-size: 13px;
+  }
+  .header {
+    font-size: 15px;
+    text-align: center;
   }
 }
