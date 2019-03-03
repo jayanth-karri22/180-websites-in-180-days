@@ -18,8 +18,8 @@ let checkMessage = () => {
     String(fullDate.getMonth()).length == 1
       ? "0" + (fullDate.getMonth() + 1)
       : fullDate.getMonth() + 1;
-  let todayDate = `${year}-${month}-${date}`;
-  return todayDate == dateSelected.value
+
+  return [month == dateSelected.value[1], date == dateSelected.value[2]]
     ? "Today is your birthday? Party Time!"
     : "Sad :( ! No parties today";
 };
@@ -44,16 +44,16 @@ let generateMessage = e => {
   header.textContent = checkMessage();
   let dateArr = String(dateSelected.value).split("-");
   let noOfDaysOld =
-    (new Date().getMonth() + 1 - dateArr[1]) * 30 +
-    new Date().getDate() -
-    dateArr[2];
+    (new Date().getFullYear() - Number(dateArr[0])) * 365 +
+    (new Date().getMonth() - Number(dateArr[1]) + 1) * 30 +
+    (new Date().getDate() - Number(dateArr[2]));
+
   content.innerHTML = `<p>Your birthday is ${months[dateArr[1]]} ${
     dateArr[2]
   }</p> 
   <p> You're ${new Date().getFullYear() - dateArr[0]} years old </p>
   <p> You're ${noOfDaysOld} days old </p>
   <p> You're ${noOfDaysOld * 24 * 60} minutes old </p>
-
   `;
 };
 
