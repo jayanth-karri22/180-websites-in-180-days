@@ -9,12 +9,16 @@ let checkMessage = () => {
   let year = fullDate.getFullYear();
   let date = fullDate.getDate();
 
+  date =
+    String(fullDate.getDate()).length == 1
+      ? "0" + fullDate.getDate()
+      : fullDate.getDate();
+
   let month =
     String(fullDate.getMonth()).length == 1
       ? "0" + (fullDate.getMonth() + 1)
       : fullDate.getMonth() + 1;
   let todayDate = `${year}-${month}-${date}`;
-
   return todayDate == dateSelected.value
     ? "Today is your birthday? Party Time!"
     : "Sad :( ! No parties today";
