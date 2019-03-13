@@ -8,7 +8,7 @@ newValue == ""
   ? (newValue = "You should probably enter some text next time")
   : newValue;
 
-content.textContent = newValue;
+content.textContent = encodeURI(newValue);
 
 function myMove() {
   var pos = 20;
