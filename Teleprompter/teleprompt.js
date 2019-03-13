@@ -2,7 +2,9 @@ let content = document.getElementsByTagName("h1")[0];
 
 let value = window.location.search.split("=")[1];
 
-let newValue = value.replace(/[+,.-_%@!#$%^*()]/g, " ");
+value = value.toLowerCase();
+
+let newValue = value.replace(/[+,.-_%@!#$%]/g, " ");
 
 value = ""
   ? (newValue = "You should probably enter some text next time")
