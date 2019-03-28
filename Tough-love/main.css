@@ -115,4 +115,7 @@ form {
   button {
     padding: 6px 15px;
   }
+  .footer {
+    position: fixed;
+  }
 }
